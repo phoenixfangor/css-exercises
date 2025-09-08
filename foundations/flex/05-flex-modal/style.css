@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*
+- The blue icon is aligned to the left.
+- There is equal space on either side of the icon 
+    (the gaps between the icon and the edge of the card, 
+    and the icon and the text, are the same).
+- There is padding around the edge of the modal.
+- The header, text, and buttons are aligned with each other.
+- The header is bold and a slightly larger text-size than the text.
+- The close button is vertically aligned with the header, 
+    and aligned in the top-right of the card.
+*/
+
 html, body {
   height: 100%;
 }
@@ -22,6 +34,16 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+.body{
+  display: flex;
+}
+
+.actions{
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +55,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .close-button {
